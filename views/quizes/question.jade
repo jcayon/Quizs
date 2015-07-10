@@ -1,0 +1,12 @@
+//
+   Created by root on 10/07/15.
+
+extends ../layout
+block content
+
+  form(method="get", action="/quizes/answer")
+     p
+      label(for="respuesta") Pregunta - #{pregunta}
+
+     input(type="text", name="respuesta", values="Responda aqui")
+     input(type="submit", value="Enviar")
